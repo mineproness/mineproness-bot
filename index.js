@@ -7,7 +7,6 @@ const setting = {
     "auth": "offline",
     "host": "mineproness.aternos.me",
     "port": 25565,
-    "url": "https://mineproness-bot.onrender.com/"
 }
 let interval = null
 let error = ""
@@ -22,9 +21,6 @@ app.get("/" , (req,res)=>{
   }
 })
 function CreateBot() {
-  setInterval(async()=>{
-    await fetch(`${setting.url}`)
-  } , 8000)
   const bot = mineflayer.createBot(setting);
 
   bot.once("spawn", () => {
@@ -36,6 +32,7 @@ function CreateBot() {
     interval = setInterval(()=>{
      bot.setControlState("jump" , true)
      bot.setControlState("jump" , false)
+     console.log("The bot just jumped")
      
     } , 1500)
   });
