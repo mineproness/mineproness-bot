@@ -1,7 +1,14 @@
 import mineflayer, { createBot } from "mineflayer";
-import setting from "./settings.json with { type: json };
 import express from 'express'
 // import {} from "prismarine-viewer";
+const settings = {
+    "version": "1.21.11",
+    "username": "minepronessBot",
+    "auth": "offline",
+    "host": "mineproness.aternos.me",
+    "port": 25565,
+    "url": "https://mineproness-bot.onrender.com/"
+}
 let interval = null
 let error = ""
 const app = express()
