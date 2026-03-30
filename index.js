@@ -1,5 +1,5 @@
 import mineflayer, { createBot } from "mineflayer";
-import setting from "./settings.json";
+import setting from "./settings.json with { type: json };
 import express from 'express'
 // import {} from "prismarine-viewer";
 let interval = null
