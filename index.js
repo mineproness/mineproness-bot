@@ -1,7 +1,7 @@
 import mineflayer, { createBot } from "mineflayer";
 import express from 'express'
 // import {} from "prismarine-viewer";
-const settings = {
+const setting = {
     "version": "1.21.11",
     "username": "minepronessBot",
     "auth": "offline",
