@@ -22,8 +22,10 @@ app.get("/" , (req,res)=>{
 })
 function CreateBot() {
   const bot = mineflayer.createBot(setting);
-
+   
   bot.once("spawn", () => {
+      app.listen(8080 , ()=>{
+      })
     console.log("The player is spawned⛳");
     setInterval(() => {
       bot.chat("i like to play minecraft with zenith launcher");
@@ -48,6 +50,4 @@ function CreateBot() {
   })
 }
 
-app.listen(8080 , ()=>{
-  CreateBot()
-})
+CreateBot()
