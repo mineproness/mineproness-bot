@@ -32,7 +32,6 @@ function CreateBot() {
     interval = setInterval(()=>{
      bot.setControlState("jump" , true)
      bot.setControlState("jump" , false)
-     console.log("The bot just jumped")
      
     } , 1500)
   });
