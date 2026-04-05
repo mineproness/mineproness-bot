@@ -1,7 +1,7 @@
 import mineflayer, { createBot } from "mineflayer";
 import express from 'express'
 // import {} from "prismarine-viewer";
-const setting = {
+let setting = {
     "version": "1.21.11",
     "username": "minepronessBot",
     "auth": "offline",
@@ -19,6 +19,13 @@ app.get("/" , (req,res)=>{
   }else{
     res.send(error)
   }
+})
+
+app.get("/api/ip/:ip/:port" , (req,res)=>{
+    const { ip , port } = req.params
+    setting.host = ip
+    setting.port = port
+    res.send("The IP and Port changed")
 })
 function CreateBot() {
   const bot = mineflayer.createBot(setting);
