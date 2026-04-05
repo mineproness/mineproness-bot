@@ -5,7 +5,7 @@ let setting = {
     "version": "1.21.11",
     "username": "minepronessBot",
     "auth": "offline",
-    "host": "butterfish.aternos.host",
+    "host": "billfish.aternos.host",
     "port": 32310,
 }
 let interval = null
