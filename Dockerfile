@@ -1,11 +1,11 @@
-FROM ubuntu/node:20-24.04
+FROM oven/bun:latest
 
 WORKDIR /app
 COPY . .
 
-RUN npm i express@latest mineflayer@latest minecraft-protocol@latest prismarine-chat@latest
+RUN bun i express@latest mineflayer@latest minecraft-protocol@latest prismarine-chat@latest
 
 
 EXPOSE 8080
 
-CMD ["node" , "index.js"]
+CMD ["bun" , "index.js"]
