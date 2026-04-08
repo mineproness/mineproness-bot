@@ -5,7 +5,7 @@ let setting = {
   version: "1.21.11",
   username: "minepronessBot",
   auth: "offline",
-  host: "billfish.aternos.host",
+  host: "moonfish.aternos.host",
   port: 32310,
 };
 function CreateBot() {
